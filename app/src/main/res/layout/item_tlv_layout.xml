@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_description_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/description"
+        android:fontFamily="@font/mulish_semibold"
+        android:textColor="@color/text_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_tag_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mulish_medium"
+        android:textColor="@color/text_color"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_description_label"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Tag Name - CardHolder Name" />
+
+    <TextView
+        android:id="@+id/tv_tag_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/tag"
+        android:fontFamily="@font/mulish_semibold"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_tag_description"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        tools:text="Tag - 5F20"
+        android:fontFamily="@font/mulish_medium"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_tag_description"
+        app:layout_constraintStart_toEndOf="@id/tv_tag_label"
+        />
+
+    <TextView
+        android:id="@+id/tv_tag_length_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/tag_length"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/mulish_semibold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_tag"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_tag_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        tools:text="Tag Length - 20"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/mulish_medium"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_tag"
+        app:layout_constraintStart_toEndOf="@id/tv_tag_length_label"
+        />
+
+    <TextView
+        android:id="@+id/tv_tag_value_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/tag_value"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/mulish_semibold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_tag_length"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_tag_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mulish_medium"
+        android:textColor="@color/text_color"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_tag_value_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_tag_length"
+        tools:text="Tag Value - 20665757575885" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
