@@ -4,10 +4,10 @@ This Android application, written in Kotlin, provides a user-friendly way to dec
 
 ## Requirements
 
-(1) Parse TLV data into its components (Tag, Length, and Value)
-(2) Display the parsed information in a user-friendly format.
-(3) Handle various TLV encoding formats commonly used in EMV transactions.
-(4) Provide error handling for invalid or malformed TLV data.
+- Parse TLV data into its components (Tag, Length, and Value)
+- Display the parsed information in a user-friendly format.
+- Handle various TLV encoding formats commonly used in EMV transactions.
+- Provide error handling for invalid or malformed TLV data.
 
 ## What I did
 
